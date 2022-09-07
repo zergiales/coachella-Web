@@ -1,0 +1,128 @@
+*{
+  transition: 1s;/*a todo le ponemos una transicion para que no se vea feo*/
+  font-family: 'Berlin Sans FB';/*por defecto*/
+  cursor: url(https://media-prd.coachella.com/content/coachella-2022/cursor.png),auto;/*cursor especial para toda la pagina*/
+}
+/*fuentes que hemos importado*/
+@font-face {
+    font-family: coachella-font;
+    src: url(../fonts/ChellaType-Regular.ttf);
+}
+@font-face {
+    font-family: titulo2;
+    src: url(../fonts/Roboto-Regular.ttf);
+}
+/*clase para poner en el titulo la fuente de coachella*/
+.titulo{
+    font-family: coachella-font;
+    font-size: 26px;
+}
+/*para los numero del titulo del lado de coachella*/
+.titulo2{
+    font-family: titulo2;
+    font-size: 25px;
+}
+/*item de la barra de navegacion*/
+.nav-item{
+    font-size: 25px;
+}
+.nav-item:hover{
+    transform: translateY(-20px);
+    text-decoration: underline;   
+}
+.navbarNav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*imagen de fondo*/
+.banner-image {
+    background-image: url('../img/fondo_music.jpg');  
+    background-size: 100%; /*especifico el tamaño de la imagen de fondo que es como el banner*/     
+}
+/*para que se vea de fondo la imagen*/
+.banner-image img{
+          width: 30px;
+          height: 100px;
+}
+/*para hacer el blur*/
+nav {
+  backdrop-filter: blur(8px);
+}
+main,footer,header,body{
+      background-color: #FFFDF4;
+      
+    }
+    .textito{
+        font-size: .875rem;
+    }
+ 
+    /*enlaces de arriba*/
+    .enlace{
+        text-decoration: none;
+        font-size: 19px;
+        color: black;
+        cursor: url(https://media-prd.coachella.com/content/coachella-2022/cursor-hover.png),pointer;
+}
+.enlace:link {
+ color: black;
+}
+
+.enlace:visited {
+color: lightseagreen;
+}
+
+.enlace:focus {
+ border-bottom: 0.5px solid;
+  color: aquamarine;
+}
+
+.enlace:hover {
+    transform: scale(1.1);
+    border-bottom: 0.5px solid;
+    color: lightseagreen;
+}
+
+.enlace:active {
+  color: lightcyan;
+}
+/*primera seccion -> cartel*/
+/*segunda seccion  -> relleno*/
+.parrafo{
+    font-size: 20px;
+    color: rgb(153, 152, 152);
+}
+footer{
+    margin: 0;
+    padding: 0;
+    margin-top: -50px;
+}
+.icono {
+	width: 50px;
+	height: 50px;
+	color: white;
+    background-color: lightblue;
+	display: inline-block;
+	margin: 0px 20px;
+	text-decoration: none;
+	border-radius: 100px;
+	transition: all 0.5s ease;
+}
+.icono svg {
+	width: 20px;
+	height: 20px;
+}
+.twitter:hover{
+    background-color:lightskyblue;
+    color: white;
+}
+.instagram:hover{
+    background-color:purple;
+    color: white;
+}
+.facebook:hover{
+    background-color:blue;
+    color: white;
+
+}

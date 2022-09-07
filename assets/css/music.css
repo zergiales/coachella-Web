@@ -1,0 +1,251 @@
+*{
+  transition: 1s;/*a todo le ponemos una transicion para que no se vea feo*/
+  font-family: 'Berlin Sans FB';/*por defecto*/
+  cursor: url(https://media-prd.coachella.com/content/coachella-2022/cursor.png),auto;/*cursor especial para toda la pagina*/
+}
+/*fuentes que hemos importado*/
+@font-face {
+    font-family: coachella-font;
+    src: url(../fonts/ChellaType-Regular.ttf);
+}
+@font-face {
+    font-family: titulo2;
+    src: url(../fonts/Roboto-Regular.ttf);
+}
+/*clase para poner en el titulo la fuente de coachella*/
+.titulo{
+    font-family: coachella-font;
+    font-size: 26px;
+}
+/*para los numero del titulo del lado de coachella*/
+.titulo2{
+    font-family: titulo2;
+    font-size: 25px;
+}
+/*item de la barra de navegacion*/
+.nav-item{
+    font-size: 25px;
+}
+.nav-item:hover{
+    transform: translateY(-20px);
+    text-decoration: underline;   
+}
+.navbarNav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*imagen de fondo*/
+.banner-image {
+    background-image: url('../img/fondo_music.jpg');  
+    background-size: 100%; /*especifico el tamaño de la imagen de fondo que es como el banner*/ 
+    background-repeat: no-repeat; 
+}
+/*para que se vea de fondo la imagen*/
+.banner-image img{
+          width: 30px;
+          height: 100px;
+}
+/*para hacer el blur*/
+nav {
+  backdrop-filter: blur(8px);
+}
+main,footer,header,body{
+      background-color: #FFFDF4;
+      
+    }
+    .textito{
+        font-size: .875rem;
+    }
+ 
+    /*enlaces de arriba*/
+    .enlace{
+        text-decoration: none;
+        font-size: 19px;
+        color: black;
+        cursor: url(https://media-prd.coachella.com/content/coachella-2022/cursor-hover.png),pointer;
+}
+.enlace:link {
+ color: black;
+}
+
+.enlace:visited {
+color: lightseagreen;
+}
+
+.enlace:focus {
+ border-bottom: 0.5px solid;
+  color: aquamarine;
+}
+
+.enlace:hover {
+    transform: scale(1.1);
+    border-bottom: 0.5px solid;
+    color: lightseagreen;
+}
+
+.enlace:active {
+  color: lightcyan;
+}
+/*primera seccion -> cartel*/
+/*segunda seccion  -> relleno*/
+.parrafo{
+    font-size: 20px;
+    color: rgb(153, 152, 152);
+}
+footer{
+    margin: 0;
+    padding: 0;
+    margin-top: -50px;
+}
+.icono {
+	width: 50px;
+	height: 50px;
+	color: white;
+    background-color: lightblue;
+	display: inline-block;
+	margin: 0px 20px;
+	text-decoration: none;
+	border-radius: 100px;
+	transition: all 0.5s ease;
+}
+.icono svg {
+	width: 20px;
+	height: 20px;
+}
+.twitter:hover{
+    background-color:lightskyblue;
+    color: white;
+}
+.instagram:hover{
+    background-color:purple;
+    color: white;
+}
+.facebook:hover{
+    background-color:blue;
+    color: white;
+
+}
+/*cositas2 -->carrusel*/
+ .galeria .contenedor-imagen {
+	max-height: 180px;
+	overflow: hidden;
+}
+
+ .galeria .contenedor-imagen a {
+	display: inline-block;
+}
+/*cositas -->imagenes de cada uno de los artistas*/
+        .contenedor1,.contenedor2,.contenedor3,.contenedor4{
+            background-image: url("/proyecto/assets/img/artist/Billie\ Eilish.png");
+            background-position: 50%;
+            background-size:70%;
+            background-repeat: no-repeat;
+            transition: all 1s;
+            width: 300px;
+            height: 300px;
+            background-color:  rgb(22, 68, 22);
+            position: relative;
+        }
+        .cuadro{
+            position: absolute;
+            width: 300px;
+            left: -1%;
+            width: 310px;
+            height: 300px;
+            border:20px solid #FFFDF4;
+            opacity: 0;/*la opcacidad esta al cero porque no queremos verlo*/
+            transition: 0.5s;
+        }
+        .texto{
+            position: absolute;
+            top: 60%;
+            left: 5%;
+            opacity: 0;
+            color: #FFFDF4;
+            transition: all 1s 0.25s;
+        }
+        .contenedor1:hover{
+            box-shadow: 8px 5px 12px rgba(0, 0, 0, 0.288);
+            background-position: 100%;
+          
+        }
+        .contenedor1:hover .cuadro, .contenedor2:hover .cuadro, .contenedor3:hover .cuadro, .contenedor4:hover .cuadro
+        ,.contenedor5:hover .cuadroGrupo{
+            transform: translateX(1px);
+            opacity: 1;
+        }
+        .contenedor1:hover .texto, .contenedor2:hover .texto , .contenedor3:hover .texto, .contenedor4:hover .texto,
+        .contenedor5:hover .texto{
+            transform: translateX(1px);
+            opacity: 1;
+        }
+        .contenedor2{
+            background-position: 0%;
+                      background-image: url("/proyecto/assets/img/artist/big_sean_2.png");
+                      background-color: lightblue;
+                      background-size: 80%;
+                      background-position:0px 20px ;
+        }
+       .contenedor2:hover{
+            box-shadow: 8px 5px 12px rgba(0, 0, 0, 0.288);
+            background-position:80px 20px ;
+
+        }
+        .contenedor3{
+            background-position: 0%;
+                      background-image: url("/proyecto/assets/img/artist/ali_gate.png");
+                      background-color: lightpink;
+                      background-size: 80%;
+                      background-position:0px 20px ;
+        }
+        .contenedor3:hover{
+            box-shadow: 8px 5px 12px rgba(0, 0, 0, 0.288);
+            background-position:80px 20px ;
+        }
+        .contenedor4{
+            background-position: 0%;
+                      background-image: url("/proyecto/assets/img/artist/harry.png");
+                      background-color: rgb(174, 189, 148);
+                      
+                      background-position:0px -60px ;
+        }
+        .contenedor4:hover{
+            box-shadow: 8px 5px 12px rgba(0, 0, 0, 0.288);
+            background-position:80px -60px ;
+        }
+        .contenedor5{
+            background-image: url("/proyecto/assets/img/artist/100gecs.png");
+            background-size:100%;
+            background-repeat: no-repeat;
+            transition: all 1s;
+            width: 300px;
+            height: 200px;
+            position: relative;
+            background-position:0px 0px ;
+        }
+        .cuadroGrupo{
+            position: absolute;
+            width: 300px;
+            left: -1%;
+            width: 310px;
+            height: 200px;
+            border:10px solid  rgba(100, 148, 237, 0.747);
+            opacity: 0;/*la opcacidad esta al cero porque no queremos verlo*/
+            transition: 0.5s;
+        }
+        .contenedor5:hover{
+            box-shadow: 8px 5px 12px rgba(0, 0, 0, 0.288);
+            transform: scale(1.1);
+        }
+ /*animacion para las tarjetas*/       
+        .card img{
+            height: 350px;
+        }
+
+        .card:hover{
+            transform: scale(0.8);
+            filter: grayscale(80%);
+            transition-delay: 0.5s;
+        }
